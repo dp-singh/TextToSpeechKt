@@ -193,7 +193,7 @@ internal class TextToSpeechAndroid(private var tts: AndroidTTS?) : TextToSpeechI
                 }
             }
             cont.invokeOnCancellation {
-                close()
+                stop()
             } 
         }
     }
